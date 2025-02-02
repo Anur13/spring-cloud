@@ -1,4 +1,18 @@
 spring:
+  cloud:
+    gateway:
+      routes[0]:
+        id: project2-check
+        uri: lb://project2
+        predicates[0]: Path=/project/check
+#        redirect the request and request path to provided uri if not rewrite filter is provided
+        predicates[1]: Method=GET
+        filters[0]: RewritePath=/project/check, /helloEureka
+      discovery:
+        locator:
+          enabled: true
+#  allows to query a service by name with which it was registered in eureka + service endpoint
+#  example - http://localhost:8081/PROJECT2/helloEureka
   application:
     name: Gateway
 server:
