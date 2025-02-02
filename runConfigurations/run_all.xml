@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="run all" type="CompoundRunConfigurationType">
+    <toRun name="gateway [spring-boot:run] " type="MavenRunConfiguration" />
+    <toRun name="project1 [spring-boot:run]  " type="MavenRunConfiguration" />
+    <toRun name="project2 [spring-boot:run]  " type="MavenRunConfiguration" />
+    <method v="2" />
+  </configuration>
+</component>
