@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: [classpath:/proj]
+  application:
+    name: config-server
+
+server:
+  port: 8012
+#  http://localhost:8012/proj/default - default config endpoint
