@@ -1,4 +1,13 @@
 spring:
+  rabbitmq:
+      host: localhost
+      port: 5672
+      username: guest
+      password: guest
+      listener:
+        simple:
+          exclusive: false
+
   profiles:
     active: native
   cloud:
@@ -12,3 +21,9 @@ spring:
 server:
   port: 8012
 #  http://localhost:8012/proj/default - default config endpoint
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

@@ -3,11 +3,11 @@ spring:
     gateway:
       routes[0]:
         id: project2-check
-        uri: lb://project2
+        uri: lb://project1
         predicates[0]: Path=/project/check
-#        redirect the request and request path to provided uri if not rewrite filter is provided
+#        redirect the request and request path to provided uri if no rewrite filter is provided
         predicates[1]: Method=GET
-        filters[0]: RewritePath=/project/check, /helloEureka
+        filters[0]: RewritePath=/project/check, /helloWorld
       discovery:
         locator:
           enabled: true
