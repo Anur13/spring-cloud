@@ -32,7 +32,7 @@ public class GlobalFilterTest implements GlobalFilter, Ordered {
     }
 
     private static boolean isAuthRoute(ServerWebExchange exchange) {
-        return exchange.getRequest().getURI().getPath().equals("/project/check");
+        return exchange.getRequest().getURI().getPath().equals("/project/test");
     }
 
     @Override

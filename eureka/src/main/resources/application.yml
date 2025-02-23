@@ -2,6 +2,10 @@ spring:
   application:
     name: discoveryservice
 eureka:
+  server:
+    eviction-interval-timer-in-ms: 5000   # Run cleanup every 5 seconds
+    enable-self-preservation: false       # Disable self-preservation (forces cleanup)
+    renewal-percent-threshold: 0.85
   client:
     register-with-eureka: false
     fetch-registry: false

@@ -15,11 +15,7 @@ public class ServiceRestController {
 
     @GetMapping("/helloWorld")
     public String helloWorld() {
-
-        System.out.println(test);
-        System.out.println(sad);
-
-        return "Hello world from Service A!";
+        return test;
     }
 
 }
