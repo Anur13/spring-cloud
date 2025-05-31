@@ -18,7 +18,8 @@ public class ServiceRestController {
     public String helloWorld() {
         System.out.println("cool");
 
-        return test;
+        throw new RuntimeException("asd");
+//        return test;
     }
 
 }

@@ -4,3 +4,5 @@ http://localhost:8081/ - gateway
 
 
 http://localhost:8081/PROJECT1/helloWorld - example
+
+http://localhost:8081/PROJECT2/actuator - actuator example

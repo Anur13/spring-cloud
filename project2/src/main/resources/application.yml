@@ -1,0 +1,46 @@
+spring:
+  config:
+    import: optional:configserver:http://localhost:8012
+  application:
+    name: project2
+  cloud:
+    openfeign:
+      circuitbreaker:
+        enabled: true
+server:port: '0'
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+    metrics:
+      enabled: true
+  health:
+    circuitbreakers:
+      enabled: true
+    ratelimiters:
+      enabled: true
+
+resilience4j:
+  circuitbreaker:
+    registerHealthIndicator: true
+    slidingWindowSize: 10
+    minimumNumberOfCalls: 5
+    permittedNumberOfCallsInHalfOpenState: 3
+    waitDurationInOpenState: 5s
+    failureRateThreshold: 50
+    eventConsumerBufferSize: 10
+
+  retry:
+    maxRetryAttempts: 3
+    waitDuration: 500ms
+  ratelimiter:
+    limitForPeriod: 10
+    limitRefreshPeriod: 1s
+    timeoutDuration: 0
+    registerHealthIndicator: true
