@@ -9,10 +9,9 @@
     <modules>
         <module>eureka</module>
         <module>gateway</module>
-        <module>project1</module>
-        <module>project2</module>
+        <module>producer</module>
+        <module>consumer</module>
         <module>config-server</module>
-        <module>kafka</module>
     </modules>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -20,6 +19,12 @@
     </properties>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients -->
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>4.1.0</version>
+        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

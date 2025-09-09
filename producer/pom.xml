@@ -7,7 +7,7 @@
 		<artifactId>parent-project</artifactId>
 		<version>1.0.0</version>
 	</parent>
-	<artifactId>project1</artifactId>
+	<artifactId>producer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>project1</name>
 	<description>Demo project for Spring Boot</description>

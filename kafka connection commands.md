@@ -1,6 +1,6 @@
 Docker terminal flow:
 
-1. connect to kafka terminal within docker  - docker container exec -it cloud-kafka-1-1  /bin/bash
+1. connect to kafka terminal within docker  - docker container exec -it spring-cloud-kafka-1-1  /bin/bash
 
 2. start running commands - kafka-topics --bootstrap-server localhost:29092 --list
 

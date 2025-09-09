@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="run all" type="CompoundRunConfigurationType">
+    <toRun name="config-server [spring-boot:run]" type="MavenRunConfiguration" />
+    <toRun name="eureka [spring-boot:run]" type="MavenRunConfiguration" />
+    <toRun name="gateway [spring-boot:run]" type="MavenRunConfiguration" />
+    <toRun name="producer [spring-boot:run]" type="MavenRunConfiguration" />
+    <toRun name="consumer [spring-boot:run]" type="MavenRunConfiguration" />
+    <method v="2" />
+  </configuration>
+</component>

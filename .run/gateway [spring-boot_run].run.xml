@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="gateway [spring-boot:run] " type="MavenRunConfiguration" factoryName="Maven">
+  <configuration default="false" name="gateway [spring-boot:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
     <MavenSettings>
       <option name="myGeneralSettings" />
       <option name="myRunnerSettings" />

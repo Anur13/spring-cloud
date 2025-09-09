@@ -1,0 +1,1 @@
+This a learning project for spring cloud (eureka, api gateway, config server, feign client) and basic kafka (some cli, consumer, producer)
